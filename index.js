@@ -16,7 +16,7 @@ const {HairRoute} =require("./routes/Hair.routes")
 const {HerbsRoute} =require("./routes/Herbs.routes")
 const cartRouter = require("./routes/cart.route")
 
-require('dotenv').config()
+
 
 
 const app = express();
@@ -59,7 +59,7 @@ app.use("/ayurveda", AyurvedaRoute);
 // ayurveda page-----
 
 
-app.listen(4001,async()=>{
+app.listen(3500,async()=>{
     try{
         await connection
         console.log("Connected to database")
